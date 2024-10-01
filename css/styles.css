@@ -3,6 +3,9 @@
 	padding: 0;
 }
 
+body {
+	font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
 .hamburger-menu {
 	font-size: 20px;
 	color: #5f6368;

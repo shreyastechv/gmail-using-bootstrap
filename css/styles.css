@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.hamburger-menu {
+	font-size: 20px;
+	color: #5f6368;
+	background-color: #eaf1fb;
+	height: 64px;
+}
+
+.hamburger-menu i {
+	margin: 0 auto;
+}
+
+.org-logo {
+	width: 100px;
+}
+
+.search-bar {
+	background-color: #eaf1fb;
+	height: 48px;
+}
+
+.search-bar div:hover {
+	border: 1px solid #d4d9e1d1;
+	background-color: #d4d9e1d1;
+}
+
+.search-bar input {
+	background-color: none;
+	border: none;
+	outline: none;
+}

@@ -6,6 +6,7 @@
 body {
 	font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
 }
+
 .hamburger-menu {
 	font-size: 20px;
 	color: #5f6368;
@@ -18,12 +19,16 @@ body {
 }
 
 .org-logo {
-	width: 100px;
+	width: 80px;
 }
 
 .search-bar {
 	background-color: #eaf1fb;
 	height: 48px;
+}
+
+.search-bar div {
+	background-color: #d4d9e1d1;
 }
 
 .search-bar div:hover {
@@ -35,4 +40,44 @@ body {
 	background-color: none;
 	border: none;
 	outline: none;
+}
+
+.status-selector {
+	height: 48px;
+	margin: 0 18px;
+	gap: 5px;
+	padding: 10px;
+}
+
+.status-dot {
+	color: #1e8e3e;
+	font-size: 12px;
+}
+
+.status-text {
+	font-size: 14px;
+}
+
+.status-chevron {
+	font-size: 10px;
+}
+
+.question-icon, .gear-icon {
+	font-size: 22px;
+}
+
+.nine-dots-grid {
+	width: 25px;
+	height: same-as-width;
+}
+
+.profile-section {
+	height: 48px;
+	padding: 5px;
+}
+
+.profile-picture {
+	width: 32px;
+	height: same-as-width;
+	margin-left: 5px;
 }

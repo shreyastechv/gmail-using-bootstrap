@@ -11,6 +11,7 @@ body {
 	font-size: 20px;
 	color: #5f6368;
 	background-color: #eaf1fb;
+	width: 64px;
 	height: 64px;
 }
 
@@ -42,11 +43,16 @@ body {
 	outline: none;
 }
 
+.section-right {
+	margin-right: 0;
+}
+
 .status-selector {
 	height: 48px;
 	margin: 0 18px;
 	gap: 5px;
 	padding: 10px;
+	background-color: #eaf1fb;
 }
 
 .status-dot {
@@ -80,4 +86,33 @@ body {
 	width: 32px;
 	height: same-as-width;
 	margin-left: 5px;
+}
+
+main {
+	height: calc(100vh - 64px);
+}
+
+main > * {
+	height: 100%;
+}
+
+.main-1 div p {
+	font-size: 12px;
+}
+
+.main-2-left {
+	width: 256px;
+}
+
+.main-2-right {
+	width: calc(84vw - 256px);
+}
+
+.main-3 * {
+	width: 35px;
+	margin-bottom: 10px;
+}
+
+.main-3 *:last-child {
+	margin-top: auto;
 }

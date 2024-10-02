@@ -11,8 +11,8 @@ body {
 	font-size: 20px;
 	color: #5f6368;
 	background-color: #eaf1fb;
-	/*width: 64px;*/
 	height: 64px;
+	width: 68px;
 }
 
 .hamburger-menu i {
@@ -99,6 +99,7 @@ main > * {
 
 .main-1 {
 	background-color: #eaf1fb;
+	width: 68px;
 }
 
 .main-1 div p {

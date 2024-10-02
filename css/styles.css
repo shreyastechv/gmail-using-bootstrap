@@ -126,6 +126,10 @@ main > * {
 	width: calc(84vw - 256px);
 }
 
+.main-3 {
+	width: 56px;
+}
+
 .main-3 * {
 	width: 35px;
 	margin-bottom: 10px;

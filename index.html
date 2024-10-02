@@ -15,34 +15,36 @@
 		<header>
 			<nav class="container-fluid fixed-top w-100">
 				<div class="row align-items-center">
-					<div class="hamburger-menu col-lg-1 d-flex align-items-center">
+					<div class="hamburger-menu col-lg-1 d-flex align-items-center me-2">
 						<i class="fa-solid fa-bars"></i>
 					</div>
-					<div class="col-lg-2">
+					<div class="col-lg-1 me-4">
 						<img src="./assets/images/gmail-header-image.png" alt="Gmail logo">
 					</div>
-					<div class="search-bar col-lg-4 d-flex align-items-center rounded-pill">
-						<div class="search-icon col-lg-1 d-flex align-items-center justify-content-center rounded-circle">
-							<i class="fa-solid fa-magnifying-glass"></i>
+					<div class="col-lg-10 d-flex align-items-center justify-content-between ps-5 ms-2">
+						<div class="search-bar d-flex align-items-center rounded-pill px-2 ms-5">
+							<div class="search-icon d-flex align-items-center justify-content-center rounded-circle">
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</div>
+							<input class="w-100 bg-transparent mx-1" type="text" placeholder="Search mail">
+							<div class="settings-icon d-flex align-items-center justify-content-center rounded-circle">
+								<i class="fa-solid fa-sliders"></i>
+							</div>
 						</div>
-						<input class="w-100 bg-transparent" type="text" placeholder="Search mail">
-						<div class="settings-icon col-lg-1 d-flex align-items-center justify-content-center rounded-circle">
-							<i class="fa-solid fa-sliders"></i>
-						</div>
-					</div>
-					<div class="section-right col-lg-5 d-flex align-items-center">
-						<div class="status-selector d-flex align-items-center rounded-pill">
-							<i class="status-dot fa-solid fa-circle"></i>
-							<div class="status-text">Active</div>
-							<i class="status-chevron fa-solid fa-chevron-down"></i>
-						</div>
-						<i class="question-icon fa-regular fa-circle-question"></i>
-						<i class="gear-icon fa-solid fa-gear"></i>
-						<div class="accounts-section d-flex align-items-center">
-							<img class="nine-dots-grid" src="./assets/images/nine-dots-grid-icon.png" alt="Nine dots grid button">
-							<div class="profile-section d-flex align-items-center border rounded">
-								<img class="org-logo" src="./assets/images/org-logo.png" alt="Organisation logo">
-								<img class="profile-picture border rounded-circle" src="./assets/images/profile-picture.png" alt="Profile picture">
+						<div class="section-right d-flex align-items-center justify-content-between ms-1">
+							<div class="status-selector d-flex align-items-center rounded-pill">
+								<i class="status-dot fa-solid fa-circle"></i>
+								<div class="status-text px-1">Active</div>
+								<i class="status-chevron fa-solid fa-chevron-down"></i>
+							</div>
+							<i class="question-icon fa-regular fa-circle-question p-2 m-1 mx-1 rounded-circle"></i>
+							<i class="gear-icon fa-solid fa-gear p-2 m-1 mx-1 rounded-circle"></i>
+							<div class="accounts-section d-flex align-items-center">
+								<img class="nine-dots-grid p-2 m-1 mx-1 rounded-circle" src="./assets/images/nine-dots-grid-icon.png" alt="Nine dots grid button">
+								<div class="profile-section d-flex align-items-center border rounded p-1 ms-3">
+									<img class="org-logo" src="./assets/images/org-logo.png" alt="Organisation logo">
+									<img class="profile-picture border rounded-circle ms-2" src="./assets/images/profile-picture.png" alt="Profile picture">
+								</div>
 							</div>
 						</div>
 					</div>
@@ -51,17 +53,17 @@
 		</header>
 		<main class="container-fluid fixed-bottom w-100">
 			<div class="row">
-				<div class="main-1 col-sm-1 d-flex flex-column align-items-center pt-4">
+				<div class="main-1 col-sm-1 d-flex flex-column align-items-center pt-3">
 					<div class="d-flex flex-column align-items-center">
-						<i class="fa-solid fa-envelope"></i>
+						<i class="fa-solid fa-envelope d-flex align-items-center justify-content-center border rounded-pill active"></i>
 						<p>Mail</p>
 					</div>
 					<div class="d-flex flex-column align-items-center">
-						<i class="fa-regular fa-message"></i>
+						<i class="fa-regular fa-message d-flex align-items-center justify-content-center rounded-pill"></i>
 						<p>Chat</p>
 					</div>
 					<div class="d-flex flex-column align-items-center">
-						<i class="fa-solid fa-video"></i>
+						<i class="fa-solid fa-video d-flex align-items-center justify-content-center rounded-pill"></i>
 						<p>Meet</p>
 					</div>
 				</div>

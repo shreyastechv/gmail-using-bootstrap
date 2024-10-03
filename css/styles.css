@@ -54,6 +54,11 @@ body {
 	background-color: #eaf1fb;
 }
 
+.status-selector:hover {
+	cursor: pointer;
+	background-color: #d3e3fd;
+}
+
 .status-dot {
 	color: #1e8e3e;
 	font-size: 12px;
@@ -76,10 +81,20 @@ body {
 	height: same-as-width;
 }
 
+.question-icon:hover, .gear-icon:hover, .nine-dots-grid:hover {
+	cursor: pointer;
+	background-color: #d4d9e1d1;
+}
+
 .profile-section {
 	height: 48px;
 	padding: 5px;
 	background-color: rgb(255 255 255 / 88%);
+}
+
+.profile-section:hover {
+	cursor: pointer;
+	background-color: #f5faff;
 }
 
 .profile-picture {
@@ -103,6 +118,10 @@ main > * {
 .sidebar {
 	background-color: #eaf1fb;
 	width: 68px;
+}
+
+.sidebar div:hover {
+	cursor: pointer;
 }
 
 .sidebar div p {
@@ -189,14 +208,30 @@ main > * {
 	color: #c3c3c3;
 }
 
+.mail-multi-select i:hover {
+	cursor: pointer;
+	background-color: #e9ecf1d1;
+}
+
 .caret-down-icon {
 	font-size: 10px;
+}
+
+.refresh-icon:hover, .more-icon:hover {
+	cursor: pointer;
+	background-color: #e9ecf1d1;
 }
 
 .toolbar-right {
 	margin-left: auto;
 	font-size: 12px;
 	gap: 25px;
+}
+
+.page-index:hover {
+	cursor: pointer;
+	background-color: #e9ecf1d1;
+	transition: 0.6s;
 }
 
 .newer-mails-icon, .older-mails-icon {
@@ -250,6 +285,11 @@ main > * {
 
 .star-icon {
 	color: #c3c3c3;
+}
+
+.checkbox.unchecked:hover, .star-icon:hover {
+	cursor: pointer;
+	background-color: #dfe3e9d1;
 }
 
 .mail-line {

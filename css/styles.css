@@ -20,6 +20,11 @@ body {
 	margin: 0 auto;
 }
 
+.hamburger-menu-icon:hover {
+	cursor: pointer;
+	background-color: #d4d9e1d1;
+}
+
 .search-bar {
 	background-color: #eaf1fb;
 	height: 48px;
@@ -114,6 +119,12 @@ main > * {
 	background-color: #d3e3fd;
 }
 
+.sidebar i:not(.active):hover {
+	cursor: pointer;
+	background-color: #dddbd7d1;
+	transition: 0.6s;
+}
+
 .content {
 	width: calc(100vw - 68px);
 }
@@ -149,6 +160,12 @@ main > * {
 .inbox-select-btn:not(.active):hover {
 	cursor: pointer;
 	background-color: #e3e3e3;
+}
+
+.labels-icon:hover {
+	cursor: pointer;
+	background-color: #d4d9e1d1;
+	transition: 0.2s;
 }
 
 .content-right {

@@ -272,7 +272,11 @@ main > * {
 }
 
 .mail-hover-items {
-	font-size: 16px;
+	font-size: 14px;
 	width: 190px;
 	display: none;
+}
+
+.mail-hover-items i:hover {
+	background-color: #d4d9e1d1;
 }

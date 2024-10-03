@@ -16,14 +16,18 @@ body {
 	width: 68px;
 }
 
-.hamburger-menu i {
-	margin: 0 auto;
+.hamburger-menu-icon:hover {
+	cursor: pointer;
+	background-color: #d4d9e1d1;
+}
+
+.top-nav {
+	width: calc(100vw - 68px);
 }
 
 .search-bar {
 	background-color: #eaf1fb;
 	height: 48px;
-	width: 100%;
 }
 
 .search-bar div:hover {
@@ -42,16 +46,17 @@ body {
 	outline: none;
 }
 
-.section-right {
-	margin-right: 0;
-}
-
 .status-selector {
 	height: 48px;
 	margin: 0 18px;
 	gap: 5px;
 	padding: 10px;
 	background-color: #eaf1fb;
+}
+
+.status-selector:hover {
+	cursor: pointer;
+	background-color: #d3e3fd;
 }
 
 .status-dot {
@@ -76,10 +81,20 @@ body {
 	height: same-as-width;
 }
 
+.question-icon:hover, .gear-icon:hover, .nine-dots-grid:hover {
+	cursor: pointer;
+	background-color: #d4d9e1d1;
+}
+
 .profile-section {
 	height: 48px;
 	padding: 5px;
 	background-color: rgb(255 255 255 / 88%);
+}
+
+.profile-section:hover {
+	cursor: pointer;
+	background-color: #f5faff;
 }
 
 .profile-picture {
@@ -100,41 +115,213 @@ main > * {
 	height: 100%;
 }
 
-.main-1 {
+.sidebar {
 	background-color: #eaf1fb;
 	width: 68px;
 }
 
-.main-1 div p {
+.sidebar div:hover {
+	cursor: pointer;
+}
+
+.sidebar div p {
 	font-size: 12px;
 }
 
-.main-1 i {
+.sidebar i {
 	width: 44px;
 	height: 30px;
 }
 
-.main-1 i.active  {
+.sidebar i.active  {
 	background-color: #d3e3fd;
 }
 
-.main-2-left {
+.sidebar i:not(.active):hover {
+	cursor: pointer;
+	background-color: #dddbd7d1;
+	transition: 0.6s;
+}
+
+.content {
+	width: calc(100vw - 68px);
+}
+
+.content-left {
 	width: 256px;
 }
 
-.main-2-right {
-	width: calc(84vw - 256px);
+.compose-btn {
+	width: 56%;
+	height: 55px;
+	background-color: #c2e7ff;
 }
 
-.main-3 {
-	width: 56px;
+.compose-btn:hover {
+	cursor: pointer;
+	box-shadow: -0.1rem 0.1rem 1px rgba(0, 0, 0, 0.2), 0.1rem 0.1rem 1px rgba(0, 0, 0, 0.2);
 }
 
-.main-3 * {
-	width: 35px;
-	margin-bottom: 10px;
+.compose-text {
+	font-size: 14px;
 }
 
-.main-3 *:last-child {
-	margin-top: auto;
+.inbox-select div {
+	font-size: 14px;
+}
+
+.inbox-select-btn.active {
+	background-color: #d3e3fd;
+	font-weight: bold;
+}
+
+.inbox-select-btn:not(.active):hover {
+	cursor: pointer;
+	background-color: #e3e3e3;
+}
+
+.labels-icon:hover {
+	cursor: pointer;
+	background-color: #d4d9e1d1;
+	transition: 0.2s;
+}
+
+.content-right {
+	width: calc(100vw - 324px);
+}
+
+.toolbar {
+	height: 48px;
+	background-color: rgb(255 255 255);
+}
+
+.toolbar-left {
+	font-size: 14px;
+	gap: 30px;
+}
+
+.checkbox {
+	font-size: 16px;
+}
+
+.checkbox.unchecked {
+	color: #c3c3c3;
+}
+
+.mail-multi-select i:hover {
+	cursor: pointer;
+	background-color: #e9ecf1d1;
+}
+
+.caret-down-icon {
+	font-size: 10px;
+}
+
+.refresh-icon:hover, .more-icon:hover {
+	cursor: pointer;
+	background-color: #e9ecf1d1;
+}
+
+.toolbar-right {
+	margin-left: auto;
+	font-size: 12px;
+	gap: 25px;
+}
+
+.page-index:hover {
+	cursor: pointer;
+	background-color: #e9ecf1d1;
+	transition: 0.6s;
+}
+
+.newer-mails-icon, .older-mails-icon {
+	color: #b8b8b8;
+}
+
+.mails {
+	background-color:#f0f6ff;
+	overflow-y: scroll;
+	height: calc(100vh - 64px);
+}
+
+.mail {
+	height: 40px;
+	font-size: 14px;
+}
+
+.mail:hover {
+	cursor: pointer;
+	box-shadow: -1px 0.1rem 1px rgba(0, 0, 0, 0.2), 1px 0.1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.mail:hover .checkbox, .mail:hover .star-icon {
+	color: black;
+}
+
+.mail:hover .grip-vertical-icon::before {
+	visibility: visible;
+}
+
+.mail:hover .mail-timestamp {
+	display: none;
+}
+
+.mail:hover .mail-overlay-items {
+	display: flex;
+}
+
+.mail:hover .mail-line {
+	width: 680px;
+}
+
+.grip-vertical-icon {
+	color: #8c97a3;
+}
+
+.grip-vertical-icon::before {
+	cursor: grab;
+	visibility: hidden;
+}
+
+.star-icon {
+	color: #c3c3c3;
+}
+
+.checkbox.unchecked:hover, .star-icon:hover {
+	cursor: pointer;
+	background-color: #dfe3e9d1;
+}
+
+.mail-line {
+	width: 760px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.mail-sender {
+	color: rgb(32, 33, 36);
+}
+
+.mail-subject {
+	color: rgb(32,33,36);
+}
+
+.mail-body {
+	color: rgb(95,99,104);
+}
+
+.mail-timestamp {
+	font-size: 12px;
+	min-width: 56px;
+}
+
+.mail-overlay-items {
+	font-size: 14px;
+	width: 190px;
+	display: none;
+}
+
+.mail-overlay-items i:hover {
+	background-color: #d4d9e1d1;
 }

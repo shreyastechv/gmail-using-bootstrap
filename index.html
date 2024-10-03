@@ -13,37 +13,37 @@
 
 	<body>
 		<header>
-			<nav class="container-fluid fixed-top w-100">
-				<div class="row align-items-center">
-					<div class="hamburger-menu col-lg-1 d-flex align-items-center me-2">
-						<i class="fa-solid fa-bars"></i>
+			<nav class="d-flex fixed-top w-100">
+				<div class="hamburger-menu d-flex align-items-center justify-content-around">
+					<i title="Hide main menu" class="hamburger-menu-icon rounded-circle fa-solid fa-bars"></i>
+				</div>
+				<div class="top-nav row align-items-center ps-sm-2 pe-sm-1 mx-sm-0">
+					<div class="col-sm-2">
+						<a title="Gmail" href="#inbox"><img src="./assets/images/gmail-header-image.png" alt="Gmail logo"></a>
 					</div>
-					<div class="col-lg-1 me-4">
-						<img src="./assets/images/gmail-header-image.png" alt="Gmail logo">
-					</div>
-					<div class="col-lg-10 d-flex align-items-center justify-content-between ps-5 ms-2">
-						<div class="search-bar d-flex align-items-center rounded-pill px-2 ms-5">
+					<div class="col-sm-10 d-flex align-items-center ps-sm-5 gap-2">
+						<div class="search-bar d-flex align-items-center rounded-pill w-100 px-sm-2">
 							<div class="search-icon d-flex align-items-center justify-content-center rounded-circle">
-								<i class="fa-solid fa-magnifying-glass"></i>
+								<i title="Search" class="fa-solid fa-magnifying-glass"></i>
 							</div>
-							<input class="w-100 bg-transparent mx-1" type="text" placeholder="Search mail">
+							<input class="bg-transparent w-100" type="text" placeholder="Search mail">
 							<div class="settings-icon d-flex align-items-center justify-content-center rounded-circle">
-								<i class="fa-solid fa-sliders"></i>
+								<i title="Show search options" class="fa-solid fa-sliders"></i>
 							</div>
 						</div>
-						<div class="section-right d-flex align-items-center justify-content-between ms-1">
+						<div class="section-right d-flex align-items-center gap-2">
 							<div class="status-selector d-flex align-items-center rounded-pill">
 								<i class="status-dot fa-solid fa-circle"></i>
-								<div class="status-text px-1">Active</div>
+								<div class="status-text px-sm-1">Active</div>
 								<i class="status-chevron fa-solid fa-chevron-down"></i>
 							</div>
-							<i class="question-icon fa-regular fa-circle-question p-2 m-1 mx-1 rounded-circle"></i>
-							<i class="gear-icon fa-solid fa-gear p-2 m-1 mx-1 rounded-circle"></i>
-							<div class="accounts-section d-flex align-items-center">
-								<img class="nine-dots-grid p-2 m-1 mx-1 rounded-circle" src="./assets/images/nine-dots-grid-icon.png" alt="Nine dots grid button">
-								<div class="profile-section d-flex align-items-center border rounded p-1 ms-3">
+							<i title="Support" class="question-icon fa-regular fa-circle-question p-sm-2 rounded-circle"></i>
+							<i title="Settings" class="gear-icon fa-solid fa-gear p-sm-2 rounded-circle"></i>
+							<div class="accounts-section d-flex align-items-center gap-2">
+								<img title="Google apps" class="nine-dots-grid p-sm-2 rounded-circle" src="./assets/images/nine-dots-grid-icon.png" alt="Nine dots grid button">
+								<div class="profile-section d-flex align-items-center border rounded ps-sm-2 gap-1">
 									<img class="org-logo" src="./assets/images/org-logo.png" alt="Organisation logo">
-									<img class="profile-picture border rounded-circle ms-2" src="./assets/images/profile-picture.png" alt="Profile picture">
+									<img class="profile-picture border rounded-circle" src="./assets/images/profile-picture.png" alt="Profile picture">
 								</div>
 							</div>
 						</div>
@@ -52,8 +52,8 @@
 			</nav>
 		</header>
 		<main class="container-fluid fixed-bottom w-100">
-			<div class="row">
-				<div class="main-1 col-sm-1 d-flex flex-column align-items-center pt-3">
+			<div class="row flex-nowrap">
+				<div class="sidebar d-flex flex-column align-items-center pt-sm-3">
 					<div class="d-flex flex-column align-items-center">
 						<i class="fa-solid fa-envelope d-flex align-items-center justify-content-center border rounded-pill active"></i>
 						<p>Mail</p>
@@ -67,36 +67,91 @@
 						<p>Meet</p>
 					</div>
 				</div>
-				<div class="main-2 col-sm-10 d-flex p-0 bg-success">
-					<div class="main-2-left bg-info">
-						<div>
-							<div class="compose-btn">
+				<div class="content d-flex pb-sm-3">
+					<div class="content-left pe-sm-2">
+						<div class="compose-section pt-sm-2 pb-sm-3">
+							<div class="compose-btn d-flex align-items-center justify-content-center border rounded-4 pe-sm-3">
+								<img class="pe-sm-2" src="./assets/images/compose-icon.png" alt="Compose button icon">
+								<div class="compose-text fw-medium">
+									Compose
+								</div>
 							</div>
 						</div>
 						<div class="inbox-select">
-							<div><i class="fa-solid fa-inbox"></i> Inbox</div>
-							<div><i class="fa-regular fa-star"></i> Starred</div>
-							<div><i class="fa-regular fa-clock"></i> Snoozed</div>
-							<div><i class="fa-regular fa-paper-plane"></i> Sent</div>
-							<div><i class="fa-regular fa-file"></i> Drafts</div>
-							<div><i class="fa-solid fa-chevron-down"></i> More</div>
+							<div title="Inbox" class="inbox-select-btn active rounded-pill mx-sm-1 my-sm-0 px-sm-3 py-sm-1"><i class="fa-solid fa-inbox me-sm-3"></i> Inbox</div>
+							<div title="Starred" class="inbox-select-btn rounded-pill mx-sm-1 my-sm-0 px-sm-3 py-sm-1"><i class="fa-regular fa-star me-sm-3"></i> Starred</div>
+							<div title="Snoozed" class="inbox-select-btn rounded-pill mx-sm-1 my-sm-0 px-sm-3 py-sm-1"><i class="fa-regular fa-clock me-sm-3"></i> Snoozed</div>
+							<div title="Sent" class="inbox-select-btn rounded-pill mx-sm-1 my-sm-0 px-sm-3 py-sm-1"><i class="fa-regular fa-paper-plane me-sm-3"></i> Sent</div>
+							<div title="Drafts" class="inbox-select-btn rounded-pill mx-sm-1 my-sm-0 px-sm-3 py-sm-1"><i class="fa-regular fa-file me-sm-3"></i> Drafts</div>
+							<div class="inbox-select-btn rounded-pill mx-sm-1 my-sm-0 px-sm-3 py-sm-1"><i class="fa-solid fa-chevron-down me-sm-3"></i> More</div>
+						</div>
+						<div class="labels-section d-flex align-items-center ps-sm-3 pe-sm-4 mt-sm-5">
+							<div class="label-text">
+								Labels
+							</div>
+							<i title="Create new label" class="labels-icon rounded-circle p-sm-2 fa-regular fa-plus ms-sm-auto"></i>
 						</div>
 					</div>
 
-					<div class="main-2-right bg-danger">
-						Main 2 Right
+					<div class="content-right col">
+						<div class="toolbar w-100 d-flex align-items-center justify-content-between rounded-top-4 px-sm-2">
+							<div class="toolbar-left d-flex align-items-center">
+								<div title="Select" class="mail-multi-select d-flex align-items-center px-sm-1 py-sm-2">
+									<!--<input class="m-sm-1" type="checkbox">-->
+									<i class="checkbox fa-regular fa-square rounded-2 p-sm-2"></i>
+									<i class="caret-down-icon fa-solid fa-caret-down rounded-2 p-sm-2"></i>
+								</div>
+								<i title="Refresh" class="refresh-icon fa-solid fa-arrow-rotate-right rounded-circle px-sm-2 py-sm-2"></i>
+								<i title="More" class="more-icon fa-solid fa-ellipsis-vertical rounded-circle px-sm-3 py-sm-2"></i>
+							</div>
+							<div class="toolbar-right d-flex align-items-center pe-sm-4">
+								<div class="page-index rounded-1 p-sm-2">
+									1-40 of 40
+								</div>
+								<i title="Newer" class="newer-mails-icon fa-solid fa-chevron-left"></i>
+								<i title="Older" class="older-mails-icon fa-solid fa-chevron-right"></i>
+							</div>
+						</div>
+
+						<!-- Mail box section -->
+						<div class="mailbox">
+							<div class="mails">
+								<div class="mail d-flex align-items-center border-bottom ps-sm-1 pe-sm-1">
+									<i class="grip-vertical-icon fa-solid fa-grip-vertical mx-sm-1"></i>
+									<!--<input class="border rounded-circle p-sm-2" type="checkbox">-->
+									<i class="checkbox unchecked fa-regular fa-square"></i>
+									<i class="star-icon fa-regular fa-star rounded-circle p-sm-2 mx-sm-1"></i>
+									<span class="mail-line">
+										<span class="mail-sender me-sm-5">Techversant Infotech.</span>
+										<span class="mail-subject">Daily Email Digest&nbsp;</span>
+										<span class="mail-body"> - Daily Digest Thursday. 3 Oct Hello, Shreyas AS Work anniversaries today MG</span>
+									</span>
+									<span class="p-sm-4"></span>
+									<span class="mail-overlay-items justify-content-between px-sm-3 ms-sm-auto">
+										<i title="Archive" class="fa-solid fa-folder-closed rounded-circle p-sm-2"></i>
+										<i title="Delete" class="fa-regular fa-trash-can rounded-circle p-sm-2"></i>
+										<i title="Mark as unread" class="fa-solid fa-envelope-circle-check rounded-circle p-sm-2"></i>
+										<i title="Snooze" class="fa-regular fa-clock rounded-circle p-sm-2"></i>
+									</span>
+									<span class="mail-timestamp ms-sm-auto">9:28 AM</span>
+								</div>
+							</div>
+
+							<!-- Mail box footer -->
+							<div class="footer">
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="main-3 col-sm-1 d-flex flex-column align-items-center">
-					<img src="./assets/images/g-calendar-logo.png" alt="Icon">
-					<img src="./assets/images/g-keep-logo.png" alt="Icon">
-					<img src="./assets/images/g-tasks-logo.png" alt="Icon">
-					<img src="./assets/images/g-contacts-logo.png" alt="Icon">
-					<i class="fa-solid fa-plus"></i>
-					<i class="fa-solid fa-chevron-right"></i>
 				</div>
 			</div>
 		</main>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+		<script>
+			const mail = document.querySelector('.mail');
+			for (let i=0; i<20; i++) {
+				const clone = mail.cloneNode(true);
+				mail.parentNode.appendChild(clone);
+			}
+		</script>
 	</body>
 </html>

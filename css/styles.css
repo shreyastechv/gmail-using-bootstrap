@@ -226,7 +226,7 @@ main > * {
 	display: none;
 }
 
-.mail:hover .mail-hover-items {
+.mail:hover .mail-overlay-items {
 	display: flex;
 }
 
@@ -271,12 +271,12 @@ main > * {
 	min-width: 56px;
 }
 
-.mail-hover-items {
+.mail-overlay-items {
 	font-size: 14px;
 	width: 190px;
 	display: none;
 }
 
-.mail-hover-items i:hover {
+.mail-overlay-items i:hover {
 	background-color: #d4d9e1d1;
 }

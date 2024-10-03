@@ -121,20 +121,3 @@ main > * {
 .main-2-left {
 	width: 256px;
 }
-
-.main-2-right {
-	width: calc(84vw - 256px);
-}
-
-.main-3 {
-	width: 56px;
-}
-
-.main-3 * {
-	width: 35px;
-	margin-bottom: 10px;
-}
-
-.main-3 *:last-child {
-	margin-top: auto;
-}

@@ -96,21 +96,21 @@ main > * {
 	height: 100%;
 }
 
-.main-1 {
+.sidebar {
 	background-color: #eaf1fb;
 	width: 68px;
 }
 
-.main-1 div p {
+.sidebar div p {
 	font-size: 12px;
 }
 
-.main-1 i {
+.sidebar i {
 	width: 44px;
 	height: 30px;
 }
 
-.main-1 i.active  {
+.sidebar i.active  {
 	background-color: #d3e3fd;
 }
 
@@ -138,6 +138,6 @@ main > * {
 	background-color: #e3e3e3;
 }
 
-.main-2-left {
+.content-left {
 	width: 320px;
 }

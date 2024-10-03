@@ -16,13 +16,13 @@ body {
 	width: 68px;
 }
 
-.hamburger-menu i {
-	margin: 0 auto;
-}
-
 .hamburger-menu-icon:hover {
 	cursor: pointer;
 	background-color: #d4d9e1d1;
+}
+
+.top-nav {
+	width: calc(100vw - 68px);
 }
 
 .search-bar {

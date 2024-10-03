@@ -171,6 +171,27 @@ main > * {
 	font-size: 14px;
 }
 
+.mail-line {
+	width: 760px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	resize: horizontal;
+}
+
+.mail-sender {
+	color: rgb(32, 33, 36);
+}
+
+.mail-subject {
+	color: rgb(32,33,36);
+}
+
+.mail-body {
+	color: rgb(95,99,104);
+}
+
 .mail-timestamp {
-	fon-size: 12px;
+	font-size: 12px;
+	width: 56px;
 }

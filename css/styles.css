@@ -42,10 +42,6 @@ body {
 	outline: none;
 }
 
-.section-right {
-	margin-right: 0;
-}
-
 .status-selector {
 	height: 48px;
 	margin: 0 18px;
@@ -118,6 +114,30 @@ main > * {
 	background-color: #d3e3fd;
 }
 
+.compose-btn {
+	width: 58%;
+	height: 55px;
+	background-color: #c2e7ff;
+}
+
+.compose-text {
+	font-size: 14px;
+}
+
+.inbox-select div {
+	font-size: 14px;
+}
+
+.inbox-select-btn.active {
+	background-color: #d3e3fd;
+	font-weight: bold;
+}
+
+.inbox-select-btn:not(.active):hover {
+	cursor: pointer;
+	background-color: #e3e3e3;
+}
+
 .main-2-left {
-	width: 256px;
+	width: 320px;
 }

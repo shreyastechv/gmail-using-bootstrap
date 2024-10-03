@@ -16,19 +16,19 @@
 			<nav class="container-fluid fixed-top w-100">
 				<div class="row align-items-center">
 					<div class="hamburger-menu col-1 d-flex align-items-center me-2 me-md-1 me-sm-0">
-						<i class="hamburger-menu-icon rounded-circle p-sm-3 fa-solid fa-bars"></i>
+						<i title="Hide main menu" class="hamburger-menu-icon rounded-circle p-sm-3 fa-solid fa-bars"></i>
 					</div>
-					<div class="col-1 me-1 me-md-0">
-						<img src="./assets/images/gmail-header-image.png" alt="Gmail logo">
+					<div class="col-1 ms-sm-2 me-md-0">
+						<a title="Gmail" href="#inbox"><img src="./assets/images/gmail-header-image.png" alt="Gmail logo"></a>
 					</div>
 					<div class="col-10 d-flex align-items-center justify-content-between ps-5 ms-2 ms-md-1 ms-sm-0">
 						<div class="search-bar d-flex align-items-center rounded-pill px-2 ms-5 ms-md-3 ms-sm-1">
 							<div class="search-icon d-flex align-items-center justify-content-center rounded-circle">
-								<i class="fa-solid fa-magnifying-glass"></i>
+								<i title="Search" class="fa-solid fa-magnifying-glass"></i>
 							</div>
 							<input class="w-100 bg-transparent mx-1" type="text" placeholder="Search mail">
 							<div class="settings-icon d-flex align-items-center justify-content-center rounded-circle">
-								<i class="fa-solid fa-sliders"></i>
+								<i title="Show search options" class="fa-solid fa-sliders"></i>
 							</div>
 						</div>
 						<div class="section-right d-flex align-items-center justify-content-between ms-1 ms-sm-0">
@@ -37,10 +37,10 @@
 								<div class="status-text px-1">Active</div>
 								<i class="status-chevron fa-solid fa-chevron-down"></i>
 							</div>
-							<i class="question-icon fa-regular fa-circle-question p-2 m-1 mx-1 mx-md-0 rounded-circle"></i>
-							<i class="gear-icon fa-solid fa-gear p-2 m-1 mx-1 mx-md-0 rounded-circle"></i>
+							<i title="Support" class="question-icon fa-regular fa-circle-question p-2 m-1 mx-1 mx-md-0 rounded-circle"></i>
+							<i title="Settings" class="gear-icon fa-solid fa-gear p-2 m-1 mx-1 mx-md-0 rounded-circle"></i>
 							<div class="accounts-section d-flex align-items-center">
-								<img class="nine-dots-grid p-2 m-1 mx-1 mx-md-0 rounded-circle" src="./assets/images/nine-dots-grid-icon.png" alt="Nine dots grid button">
+								<img title="Google apps" class="nine-dots-grid p-2 m-1 mx-1 mx-md-0 rounded-circle" src="./assets/images/nine-dots-grid-icon.png" alt="Nine dots grid button">
 								<div class="profile-section d-flex align-items-center border rounded p-1 ms-3">
 									<img class="org-logo" src="./assets/images/org-logo.png" alt="Organisation logo">
 									<img class="profile-picture border rounded-circle ms-2" src="./assets/images/profile-picture.png" alt="Profile picture">
@@ -78,38 +78,38 @@
 							</div>
 						</div>
 						<div class="inbox-select">
-							<div class="inbox-select-btn active rounded-pill mx-sm-1 my-sm-0 px-sm-3 py-sm-1"><i class="fa-solid fa-inbox me-sm-3"></i> Inbox</div>
-							<div class="inbox-select-btn rounded-pill mx-sm-1 my-sm-0 px-sm-3 py-sm-1"><i class="fa-regular fa-star me-sm-3"></i> Starred</div>
-							<div class="inbox-select-btn rounded-pill mx-sm-1 my-sm-0 px-sm-3 py-sm-1"><i class="fa-regular fa-clock me-sm-3"></i> Snoozed</div>
-							<div class="inbox-select-btn rounded-pill mx-sm-1 my-sm-0 px-sm-3 py-sm-1"><i class="fa-regular fa-paper-plane me-sm-3"></i> Sent</div>
-							<div class="inbox-select-btn rounded-pill mx-sm-1 my-sm-0 px-sm-3 py-sm-1"><i class="fa-regular fa-file me-sm-3"></i> Drafts</div>
+							<div title="Inbox" class="inbox-select-btn active rounded-pill mx-sm-1 my-sm-0 px-sm-3 py-sm-1"><i class="fa-solid fa-inbox me-sm-3"></i> Inbox</div>
+							<div title="Starred" class="inbox-select-btn rounded-pill mx-sm-1 my-sm-0 px-sm-3 py-sm-1"><i class="fa-regular fa-star me-sm-3"></i> Starred</div>
+							<div title="Snoozed" class="inbox-select-btn rounded-pill mx-sm-1 my-sm-0 px-sm-3 py-sm-1"><i class="fa-regular fa-clock me-sm-3"></i> Snoozed</div>
+							<div title="Sent" class="inbox-select-btn rounded-pill mx-sm-1 my-sm-0 px-sm-3 py-sm-1"><i class="fa-regular fa-paper-plane me-sm-3"></i> Sent</div>
+							<div title="Drafts" class="inbox-select-btn rounded-pill mx-sm-1 my-sm-0 px-sm-3 py-sm-1"><i class="fa-regular fa-file me-sm-3"></i> Drafts</div>
 							<div class="inbox-select-btn rounded-pill mx-sm-1 my-sm-0 px-sm-3 py-sm-1"><i class="fa-solid fa-chevron-down me-sm-3"></i> More</div>
 						</div>
 						<div class="labels-section d-flex align-items-center ps-sm-3 pe-sm-4 mt-sm-5">
 							<div class="label-text">
 								Labels
 							</div>
-							<i class="labels-icon rounded-circle p-sm-2 fa-regular fa-plus ms-sm-auto"></i>
+							<i title="Create new label" class="labels-icon rounded-circle p-sm-2 fa-regular fa-plus ms-sm-auto"></i>
 						</div>
 					</div>
 
 					<div class="content-right col">
 						<div class="toolbar w-100 d-flex align-items-center justify-content-between">
 							<div class="toolbar-left d-flex align-items-center">
-								<div class="mail-multi-select d-flex align-items-center px-sm-1 py-sm-2">
+								<div title="Select" class="mail-multi-select d-flex align-items-center px-sm-1 py-sm-2">
 									<!--<input class="m-sm-1" type="checkbox">-->
 									<i class="checkbox fa-regular fa-square"></i>
 									<i class="caret-down-icon fa-solid fa-caret-down m-sm-1"></i>
 								</div>
-								<i class="fa-solid fa-arrow-rotate-right"></i>
-								<i class="fa-solid fa-ellipsis-vertical"></i>
+								<i title="Refresh" class="fa-solid fa-arrow-rotate-right"></i>
+								<i title="More" class="fa-solid fa-ellipsis-vertical"></i>
 							</div>
 							<div class="toolbar-right d-flex align-items-center pe-sm-4">
 								<div class="page-index">
 									1-40 of 40
 								</div>
-								<i class="fa-solid fa-chevron-left"></i>
-								<i class="fa-solid fa-chevron-right"></i>
+								<i title="Newer" class="fa-solid fa-chevron-left"></i>
+								<i title="Older" class="fa-solid fa-chevron-right"></i>
 							</div>
 						</div>
 

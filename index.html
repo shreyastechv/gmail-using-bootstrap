@@ -52,8 +52,8 @@
 			</nav>
 		</header>
 		<main class="container-fluid fixed-bottom w-100">
-			<div class="row">
-				<div class="sidebar col-sm-1 d-flex flex-column align-items-center pt-3">
+			<div class="row flex-nowrap">
+				<div class="sidebar d-flex flex-column align-items-center pt-3">
 					<div class="d-flex flex-column align-items-center">
 						<i class="fa-solid fa-envelope d-flex align-items-center justify-content-center border rounded-pill active"></i>
 						<p>Mail</p>
@@ -67,7 +67,7 @@
 						<p>Meet</p>
 					</div>
 				</div>
-				<div class="content col-sm-11 d-flex pb-sm-3">
+				<div class="content d-flex pb-sm-3">
 					<div class="content-left pe-sm-2">
 						<div class="compose-section pt-sm-2 pb-sm-3">
 							<div class="compose-btn d-flex align-items-center justify-content-center border rounded-4">
@@ -93,7 +93,7 @@
 						</div>
 					</div>
 
-					<div class="content-right w-100 col">
+					<div class="content-right col">
 						<div class="toolbar w-100 d-flex align-items-center justify-content-between">
 							<div class="toolbar-left d-flex align-items-center">
 								<div class="mail-multi-select d-flex align-items-center px-sm-1 py-sm-2">
@@ -111,6 +111,8 @@
 								<i class="fa-solid fa-chevron-right"></i>
 							</div>
 						</div>
+
+						<!-- Mail box section -->
 						<div class="mailbox rounded-top">
 							<div class="mails">
 								<div class="mail d-flex align-items-center border-bottom ps-sm-1 pe-sm-1">
@@ -122,9 +124,12 @@
 										<span class="mail-subject">Daily Email Digest&nbsp;</span>
 										<span class="mail-body"> - Daily Digest Thursday. 3 Oct Hello, Shreyas AS Work anniversaries today MG</span>
 									</span>
+									<span class="p-sm-4"></span>
 									<span class="mail-timestamp ms-sm-auto">9:28 AM</span>
 								</div>
 							</div>
+
+							<!-- Mail box footer -->
 							<div class="footer">
 							</div>
 						</div>

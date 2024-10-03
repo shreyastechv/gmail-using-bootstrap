@@ -139,5 +139,38 @@ main > * {
 }
 
 .content-left {
-	width: 320px;
+	width: 256px;
+}
+
+.toolbar {
+	height: 48px;
+	background-color: rgb(255 255 255);
+}
+
+.toolbar-left {
+	font-size: 14px;
+	gap: 30px;
+}
+
+.toolbar-right {
+	margin-left: auto;
+	font-size: 12px;
+	gap: 25px;
+}
+
+.caret-down-icon {
+	font-size: 10px;
+}
+
+.mails {
+	background-color:#f0f6ff;
+}
+
+.mail {
+	height: 40px;
+	font-size: 14px;
+}
+
+.mail-timestamp {
+	fon-size: 12px;
 }

@@ -189,14 +189,18 @@ main > * {
 	color: #c3c3c3;
 }
 
+.caret-down-icon {
+	font-size: 10px;
+}
+
 .toolbar-right {
 	margin-left: auto;
 	font-size: 12px;
 	gap: 25px;
 }
 
-.caret-down-icon {
-	font-size: 10px;
+.newer-mails-icon, .older-mails-icon {
+	color: #b8b8b8;
 }
 
 .mails {

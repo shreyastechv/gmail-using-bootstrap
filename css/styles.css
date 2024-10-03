@@ -205,7 +205,6 @@ main > * {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	resize: horizontal;
 }
 
 .mail-sender {

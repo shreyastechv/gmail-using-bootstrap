@@ -241,7 +241,7 @@ main > * {
 .mails {
 	background-color:#f0f6ff;
 	overflow-y: scroll;
-	height: calc(100vh - 64px);
+	height: calc(100vh - 112px);
 }
 
 .mail {

@@ -346,6 +346,7 @@ main > * {
 
 	main {
 		height: calc(100vh - 120px);
+		font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;
 	}
 }
 
@@ -403,4 +404,42 @@ main > * {
 
 .searchbar-mobile input {
 	border: none;
+}
+
+.mailbox-mobile {
+	height: 20px;
+}
+
+.mail-mobile {
+	height: 79px;
+}
+
+.mail-line-mobile {
+	overflow-x: scroll;
+}
+
+.mail-line-mobile {
+	font-size: 13px;
+	color: #777;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.mail-line-mobile span:first-child {
+	font-size: 17px;
+	color: #060606;
+}
+
+.mail-end-mobile {
+	color: #777;
+	width: 50px;
+}
+
+.mail-end-mobile span {
+	font-size: 12px;
+}
+
+.mail-end-mobile img {
+	width: 30px;
 }

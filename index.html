@@ -14,46 +14,54 @@
 	<body>
 		<header>
 			<nav class="d-flex fixed-top w-100">
-				<div class="hamburger-menu d-flex align-items-center justify-content-around">
-					<i title="Hide main menu" class="hamburger-menu-icon rounded-circle fa-solid fa-bars p-sm-3"></i>
-				</div>
-				<div class="top-nav row align-items-center ps-sm-2 pe-sm-1 mx-sm-0">
-					<div class="col-sm-2">
-						<a title="Gmail" class="d-md-grid d-sm-none" href="#inbox"><img src="./assets/images/gmail-header-image.png" alt="Gmail header image"></a>
-						<a title="Gmail" class="d-md-none d-sm-flex" href="#inbox"><img src="./assets/images/gmail-logo.png" alt="Gmail logo"></a>
+				<!--Desktop Navigation Bar-->
+				<div class="desktop-nav d-sm-flex d-none flex w-100 ">
+					<div class="hamburger-menu d-flex align-items-center justify-content-around">
+						<i title="Hide main menu" class="hamburger-menu-icon rounded-circle fa-solid fa-bars p-sm-3"></i>
 					</div>
-					<div class="col-sm-10 d-flex align-items-center justify-content-end ps-md-5 ps-sm-3 gap-md-2 gap-sm-0">
-						<div class="search-bar d-flex align-items-center rounded-pill w-100 px-sm-2">
-							<div class="search-icon d-flex align-items-center justify-content-center rounded-circle">
-								<i title="Search" class="fa-solid fa-magnifying-glass"></i>
-							</div>
-							<input class="bg-transparent w-100" type="text" placeholder="Search mail">
-							<div class="settings-icon d-flex align-items-center justify-content-center rounded-circle">
-								<i title="Show search options" class="fa-solid fa-sliders"></i>
-							</div>
+					<div class="top-nav row align-items-center ps-sm-2 pe-sm-1 mx-sm-0">
+						<div class="col-sm-2">
+							<a title="Gmail" class="d-md-grid d-sm-none" href="#inbox"><img src="./assets/images/gmail-header-image.png" alt="Gmail header image"></a>
+							<a title="Gmail" class="d-md-none d-sm-flex" href="#inbox"><img src="./assets/images/gmail-logo.png" alt="Gmail logo"></a>
 						</div>
-						<div class="section-right d-flex align-items-center gap-md-2 gap-sm-0">
-							<div class="status-selector d-flex align-items-center rounded-pill">
-								<i class="status-dot fa-solid fa-circle"></i>
-								<div class="status-text px-sm-1">Active</div>
-								<i class="status-chevron fa-solid fa-chevron-down"></i>
+						<div class="col-sm-10 d-flex align-items-center justify-content-end ps-md-5 ps-sm-3 gap-md-2 gap-sm-0">
+							<div class="search-bar d-flex align-items-center rounded-pill w-100 px-sm-2">
+								<div class="search-icon d-flex align-items-center justify-content-center rounded-circle">
+									<i title="Search" class="fa-solid fa-magnifying-glass"></i>
+								</div>
+								<input class="bg-transparent w-100" type="text" placeholder="Search mail">
+								<div class="settings-icon d-flex align-items-center justify-content-center rounded-circle">
+									<i title="Show search options" class="fa-solid fa-sliders"></i>
+								</div>
 							</div>
-							<i title="Support" class="question-icon fa-regular fa-circle-question p-sm-2 rounded-circle"></i>
-							<i title="Settings" class="gear-icon fa-solid fa-gear p-sm-2 rounded-circle"></i>
-							<div class="accounts-section d-flex align-items-center gap-md-2 gap-sm-0">
-								<img title="Google apps" class="nine-dots-grid p-sm-2 rounded-circle" src="./assets/images/nine-dots-grid-icon.png" alt="Nine dots grid button">
-								<div class="profile-section d-flex align-items-center border rounded ps-md-2 ps-sm-0 gap-md-1 gap-sm-0">
-									<img class="org-logo d-md-grid d-sm-none" src="./assets/images/org-logo.png" alt="Organisation logo">
-									<img class="profile-picture border rounded-circle" src="./assets/images/profile-picture.png" alt="Profile picture">
+							<div class="section-right d-flex align-items-center gap-md-2 gap-sm-0">
+								<div class="status-selector d-flex align-items-center rounded-pill">
+									<i class="status-dot fa-solid fa-circle"></i>
+									<div class="status-text px-sm-1">Active</div>
+									<i class="status-chevron fa-solid fa-chevron-down"></i>
+								</div>
+								<i title="Support" class="question-icon fa-regular fa-circle-question p-sm-2 rounded-circle"></i>
+								<i title="Settings" class="gear-icon fa-solid fa-gear p-sm-2 rounded-circle"></i>
+								<div class="accounts-section d-flex align-items-center gap-md-2 gap-sm-0">
+									<img title="Google apps" class="nine-dots-grid p-sm-2 rounded-circle" src="./assets/images/nine-dots-grid-icon.png" alt="Nine dots grid button">
+									<div class="profile-section d-flex align-items-center border rounded ps-md-2 ps-sm-0 gap-md-1 gap-sm-0">
+										<img class="org-logo d-md-grid d-sm-none" src="./assets/images/org-logo.png" alt="Organisation logo">
+										<img class="profile-picture border rounded-circle" src="./assets/images/profile-picture.png" alt="Profile picture">
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+
+				<!--Mobile Navigation Bar-->
+				<div class="mobile-nav d-sm-flex d-none flex w-100 ">
+				</div>
 			</nav>
 		</header>
 		<main class="container-fluid fixed-bottom w-100">
-			<div class="row flex-nowrap">
+			<!--Desktop Main Section-->
+			<div class="desktop-main d-sm-flex row flex-nowrap d-none">
 				<div class="sidebar d-flex flex-column align-items-center pt-sm-3">
 					<div class="d-flex flex-column align-items-center">
 						<i class="fa-solid fa-envelope d-flex align-items-center justify-content-center border rounded-pill active"></i>
@@ -144,6 +152,10 @@
 						</div>
 					</div>
 				</div>
+			</div>
+
+			<!--Mobile Main Section-->
+			<div class="desktop-main d-sm-flex row flex-nowrap d-none">
 			</div>
 		</main>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

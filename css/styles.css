@@ -325,3 +325,13 @@ main > * {
 .mail-overlay-items i:hover {
 	background-color: #d4d9e1d1;
 }
+
+@media (max-width: 768px) {
+	.toolbar-left {
+		gap: 1px;
+	}
+
+	.toolbar-right {
+		gap: 6px;
+	}
+}

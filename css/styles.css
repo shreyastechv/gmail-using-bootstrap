@@ -414,13 +414,17 @@ main > * {
 	height: 79px;
 }
 
+.mail-mobile input {
+	cursor: pointer;
+}
+
 .mail-line-mobile {
 	overflow-x: scroll;
 }
 
 .mail-line-mobile {
 	font-size: 13px;
-	color: #777;
+	color: #6e6e6e;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -442,4 +446,5 @@ main > * {
 
 .mail-end-mobile img {
 	width: 30px;
+	cursor: pointer;
 }

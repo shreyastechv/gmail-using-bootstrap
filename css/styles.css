@@ -340,11 +340,13 @@ main > * {
 
 /* Below 576px */
 @media (max-width: 576px) {
-	background-color: #f9f9f9;
+	body {
+		background-color: #f9f9f9;
+	}
 }
 
 .mobile-banner {
-	height: 77px;
+	min-height: 77px;
 	background-color: #f4f6fb;
 }
 
@@ -367,8 +369,18 @@ main > * {
 	font-size: 14px;
 	font-weight: 600;
 	color: #0b57d0;
+	cursor: pointer;
 }
 
 .mobile-header {
 	height: 43px;
+	color: #333;
+	font-size: 19px;
+	font-weight: 300;
+	background-color: #f1f1f1;
+}
+
+.mobile-header > i:last-child {
+	color: #d92b2b;
+	font-size: 35px;
 }

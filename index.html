@@ -15,7 +15,7 @@
 		<header>
 			<nav class="d-flex fixed-top w-100">
 				<!--Desktop Navigation Bar-->
-				<div class="desktop-nav d-sm-flex d-none flex w-100 ">
+				<div class="desktop-nav d-sm-flex d-none w-100 ">
 					<div class="hamburger-menu d-flex align-items-center justify-content-around">
 						<i title="Hide main menu" class="hamburger-menu-icon rounded-circle fa-solid fa-bars p-sm-3"></i>
 					</div>
@@ -66,8 +66,13 @@
 							OPEN
 						</div>
 					</div>
-					<div class="mobile-header w-100 bg-warning">
-						Mobile Header
+					<div class="mobile-header d-flex align-items-center justify-content-between border-top border-bottom w-100 pe-1">
+						<div>
+							<i class="fa-solid fa-bars p-1"></i>
+							<i class="fa-solid fa-rotate-right ps-3"></i>
+						</div>
+						<span>Inbox</span>
+						<i class="fa-solid fa-square-pen"></i>
 					</div>
 				</div>
 			</nav>
@@ -164,7 +169,8 @@
 			</div>
 
 			<!--Mobile Main Section-->
-			<div class="desktop-main d-sm-none row flex-nowrap d-flex">
+			<div class="mobile-main d-sm-none row flex-nowrap d-flex fixed-bottom">
+				Mobile main
 			</div>
 		</main>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

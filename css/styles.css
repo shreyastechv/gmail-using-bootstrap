@@ -407,7 +407,8 @@ main > * {
 }
 
 .mailbox-mobile {
-	height: 20px;
+	height: calc(100vh - 164px);
+	overflow-y: scroll;
 }
 
 .mail-mobile {

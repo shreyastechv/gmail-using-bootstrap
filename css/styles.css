@@ -231,7 +231,7 @@ main > * {
 .page-index:hover {
 	cursor: pointer;
 	background-color: #e9ecf1d1;
-	transition: 0.6s;
+	transition: 0.3s;
 }
 
 .newer-mails-icon, .older-mails-icon {

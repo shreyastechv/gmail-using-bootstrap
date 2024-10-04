@@ -402,6 +402,10 @@ main > * {
 	height: 44px;
 }
 
+.searchbar-mobile i {
+	color: #727272;
+}
+
 .searchbar-mobile input {
 	border: none;
 }

@@ -43,7 +43,6 @@ body {
 }
 
 .searchbar input {
-	background-color: none;
 	border: none;
 	outline: none;
 }
@@ -80,7 +79,6 @@ body {
 
 .nine-dots-grid {
 	width: 40px;
-	height: same-as-width;
 }
 
 .question-icon:hover, .gear-icon:hover, .nine-dots-grid:hover {
@@ -101,7 +99,6 @@ body {
 
 .profile-picture {
 	width: 33px;
-	height: same-as-width;
 	margin-left: 5px;
 }
 

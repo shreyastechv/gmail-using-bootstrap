@@ -14,45 +14,72 @@
 	<body>
 		<header>
 			<nav class="d-flex fixed-top w-100">
-				<div class="hamburger-menu d-flex align-items-center justify-content-around">
-					<i title="Hide main menu" class="hamburger-menu-icon rounded-circle fa-solid fa-bars"></i>
-				</div>
-				<div class="top-nav row align-items-center ps-sm-2 pe-sm-1 mx-sm-0">
-					<div class="col-sm-2">
-						<a title="Gmail" href="#inbox"><img src="./assets/images/gmail-header-image.png" alt="Gmail logo"></a>
+				<!--Desktop Navigation Bar-->
+				<div class="desktop-nav d-sm-flex d-none w-100 ">
+					<div class="hamburger-menu d-flex align-items-center justify-content-around">
+						<i title="Hide main menu" class="hamburger-menu-icon rounded-circle fa-solid fa-bars p-sm-3"></i>
 					</div>
-					<div class="col-sm-10 d-flex align-items-center ps-sm-5 gap-2">
-						<div class="search-bar d-flex align-items-center rounded-pill w-100 px-sm-2">
-							<div class="search-icon d-flex align-items-center justify-content-center rounded-circle">
-								<i title="Search" class="fa-solid fa-magnifying-glass"></i>
-							</div>
-							<input class="bg-transparent w-100" type="text" placeholder="Search mail">
-							<div class="settings-icon d-flex align-items-center justify-content-center rounded-circle">
-								<i title="Show search options" class="fa-solid fa-sliders"></i>
-							</div>
+					<div class="top-nav row align-items-center ps-sm-2 pe-sm-1 mx-sm-0">
+						<div class="col-sm-2">
+							<a title="Gmail" class="d-md-grid d-sm-none" href="#inbox"><img src="./assets/images/gmail-header-image.png" alt="Gmail header image"></a>
+							<a title="Gmail" class="d-md-none d-sm-flex" href="#inbox"><img src="./assets/images/gmail-logo.png" alt="Gmail logo"></a>
 						</div>
-						<div class="section-right d-flex align-items-center gap-2">
-							<div class="status-selector d-flex align-items-center rounded-pill">
-								<i class="status-dot fa-solid fa-circle"></i>
-								<div class="status-text px-sm-1">Active</div>
-								<i class="status-chevron fa-solid fa-chevron-down"></i>
+						<div class="col-sm-10 d-flex align-items-center justify-content-end ps-md-5 ps-sm-3 gap-md-2 gap-sm-0">
+							<div class="searchbar d-flex align-items-center rounded-pill w-100 px-sm-2">
+								<div class="search-icon d-flex align-items-center justify-content-center rounded-circle">
+									<i title="Search" class="fa-solid fa-magnifying-glass"></i>
+								</div>
+								<input class="bg-transparent w-100" type="text" placeholder="Search mail">
+								<div class="settings-icon d-flex align-items-center justify-content-center rounded-circle">
+									<i title="Show search options" class="fa-solid fa-sliders"></i>
+								</div>
 							</div>
-							<i title="Support" class="question-icon fa-regular fa-circle-question p-sm-2 rounded-circle"></i>
-							<i title="Settings" class="gear-icon fa-solid fa-gear p-sm-2 rounded-circle"></i>
-							<div class="accounts-section d-flex align-items-center gap-2">
-								<img title="Google apps" class="nine-dots-grid p-sm-2 rounded-circle" src="./assets/images/nine-dots-grid-icon.png" alt="Nine dots grid button">
-								<div class="profile-section d-flex align-items-center border rounded ps-sm-2 gap-1">
-									<img class="org-logo" src="./assets/images/org-logo.png" alt="Organisation logo">
-									<img class="profile-picture border rounded-circle" src="./assets/images/profile-picture.png" alt="Profile picture">
+							<div class="section-right d-flex align-items-center gap-md-2 gap-sm-0">
+								<div class="status-selector d-flex align-items-center rounded-pill">
+									<i class="status-dot fa-solid fa-circle"></i>
+									<div class="status-text px-sm-1">Active</div>
+									<i class="status-chevron fa-solid fa-chevron-down"></i>
+								</div>
+								<i title="Support" class="question-icon fa-regular fa-circle-question p-sm-2 rounded-circle"></i>
+								<i title="Settings" class="gear-icon fa-solid fa-gear p-sm-2 rounded-circle"></i>
+								<div class="accounts-section d-flex align-items-center gap-md-2 gap-sm-0">
+									<img title="Google apps" class="nine-dots-grid p-sm-2 rounded-circle" src="./assets/images/nine-dots-grid-icon.png" alt="Nine dots grid button">
+									<div class="profile-section d-flex align-items-center border rounded ps-md-2 ps-sm-0 gap-md-1 gap-sm-0">
+										<img class="org-logo d-md-grid d-sm-none" src="./assets/images/org-logo.png" alt="Organisation logo">
+										<img class="profile-picture border rounded-circle" src="./assets/images/profile-picture.png" alt="Profile picture">
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+
+				<!--Mobile Navigation Bar-->
+				<div class="mobile-nav row d-sm-none d-flex w-100 bg-primary mx-0">
+					<div class="mobile-banner d-flex align-items-center w-100 pe-4">
+						<img class="mobile-banner-img" src="./assets/images/gmail-header-image-mobile.png" alt="Gmail mobile banner image">
+						<div class="mobile-banner-text d-flex row px-2">
+							<span>Upgrade to a smarter Gmail</span>
+							<span>Secure, fast & organized email</span>
+						</div>
+						<div class="mobile-banner-link">
+							OPEN
+						</div>
+					</div>
+					<div class="mobile-header d-flex align-items-center justify-content-between border-top border-bottom w-100 pe-1">
+						<div>
+							<i class="fa-solid fa-bars p-1"></i>
+							<i class="fa-solid fa-rotate-right ps-3"></i>
+						</div>
+						<span>Inbox</span>
+						<i class="fa-solid fa-square-pen"></i>
+					</div>
+				</div>
 			</nav>
 		</header>
 		<main class="container-fluid fixed-bottom w-100">
-			<div class="row flex-nowrap">
+			<!--Desktop Main Section-->
+			<div class="desktop-main d-sm-flex row flex-nowrap d-none">
 				<div class="sidebar d-flex flex-column align-items-center pt-sm-3">
 					<div class="d-flex flex-column align-items-center">
 						<i class="fa-solid fa-envelope d-flex align-items-center justify-content-center border rounded-pill active"></i>
@@ -104,7 +131,7 @@
 								<i title="Refresh" class="refresh-icon fa-solid fa-arrow-rotate-right rounded-circle px-sm-2 py-sm-2"></i>
 								<i title="More" class="more-icon fa-solid fa-ellipsis-vertical rounded-circle px-sm-3 py-sm-2"></i>
 							</div>
-							<div class="toolbar-right d-flex align-items-center pe-sm-4">
+							<div class="toolbar-right d-flex align-items-center pe-md-4 pe-sm-2">
 								<div class="page-index rounded-1 p-sm-2">
 									1-40 of 40
 								</div>
@@ -136,10 +163,29 @@
 									<span class="mail-timestamp ms-sm-auto">9:28 AM</span>
 								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-							<!-- Mail box footer -->
-							<div class="footer">
-							</div>
+			<!--Mobile Main Section-->
+			<div class="mobile-main d-sm-none row d-flex align-content-start fixed-bottom">
+				<div class="searchbar-mobile d-flex align-items-center border-bottom w-100 px-3 py-1">
+					<i class="fa-solid fa-magnifying-glass p-2"></i>
+					<input class="w-100" placeholder="Search">
+				</div>
+
+				<div class="mailbox-mobile">
+					<div class="mail-mobile d-flex align-items-center border-bottom p-2 gap-2">
+						<input type="checkbox">
+						<div class="mail-line-mobile d-flex w-100 row">
+							<span>Techversant Infotech Pvt.</span>
+							<span>Daily Email Digest</span>
+							<span>Daily Digest Thursday. 3 Oct Hello, Shreyas AS Work anniversaries today ABC Joseph K</span>
+						</div>
+						<div class="mail-end-mobile d-flex flex-column align-items-end justify-content-between gap-2">
+							<span>9:28 am</span>
+							<img src="./assets/images/star-icon-mobile.png" alt="Star icon mobile">
 						</div>
 					</div>
 				</div>
@@ -151,6 +197,12 @@
 			for (let i=0; i<20; i++) {
 				const clone = mail.cloneNode(true);
 				mail.parentNode.appendChild(clone);
+			}
+
+			const mailMobile = document.querySelector('.mail-mobile');
+			for (let i=0; i<20; i++) {
+				const cloneMobile = mailMobile.cloneNode(true);
+				mailMobile.parentNode.appendChild(cloneMobile);
 			}
 		</script>
 	</body>

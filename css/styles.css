@@ -3,6 +3,8 @@
 	padding: 0;
 }
 
+
+/* Above 576px */
 body {
 	font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
 	background-color: #f6f8fc;
@@ -25,12 +27,12 @@ body {
 	width: calc(100vw - 68px);
 }
 
-.search-bar {
+.searchbar {
 	background-color: #eaf1fb;
 	height: 48px;
 }
 
-.search-bar div:hover {
+.searchbar div:hover {
 	background-color: #d4d9e1d1;
 	cursor: pointer;
 }
@@ -40,8 +42,7 @@ body {
 	height: 38px;
 }
 
-.search-bar input {
-	background-color: none;
+.searchbar input {
 	border: none;
 	outline: none;
 }
@@ -78,7 +79,6 @@ body {
 
 .nine-dots-grid {
 	width: 40px;
-	height: same-as-width;
 }
 
 .question-icon:hover, .gear-icon:hover, .nine-dots-grid:hover {
@@ -99,7 +99,6 @@ body {
 
 .profile-picture {
 	width: 33px;
-	height: same-as-width;
 	margin-left: 5px;
 }
 
@@ -231,7 +230,7 @@ main > * {
 .page-index:hover {
 	cursor: pointer;
 	background-color: #e9ecf1d1;
-	transition: 0.6s;
+	transition: 0.3s;
 }
 
 .newer-mails-icon, .older-mails-icon {
@@ -241,7 +240,7 @@ main > * {
 .mails {
 	background-color:#f0f6ff;
 	overflow-y: scroll;
-	height: calc(100vh - 64px);
+	height: calc(100vh - 112px);
 }
 
 .mail {
@@ -324,4 +323,130 @@ main > * {
 
 .mail-overlay-items i:hover {
 	background-color: #d4d9e1d1;
+}
+
+@media (max-width: 768px) {
+	.toolbar-left {
+		gap: 1px;
+	}
+
+	.toolbar-right {
+		gap: 6px;
+	}
+}
+
+/* Below 576px */
+@media (max-width: 576px) {
+	body {
+		background-color: #f9f9f9;
+	}
+
+	main {
+		height: calc(100vh - 120px);
+		font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;
+	}
+}
+
+.mobile-banner {
+	min-height: 77px;
+	background-color: #f4f6fb;
+}
+
+.mobile-banner-img {
+	width: 50px;
+}
+
+.mobile-banner-text span {
+	font-size: 14px;
+	color: #1f1f1f;
+}
+
+.mobile-banner-text span:first-child {
+	font-size: 16px;
+	font-weight: 600;
+	color: #1f1f1f;
+}
+
+.mobile-banner-link {
+	font-size: 14px;
+	font-weight: 600;
+	color: #0b57d0;
+	cursor: pointer;
+}
+
+.mobile-header {
+	height: 43px;
+	color: #333;
+	font-size: 19px;
+	font-weight: 300;
+	background-color: #f1f1f1;
+}
+
+.mobile-header i {
+	cursor: pointer;
+}
+
+.mobile-header > i:last-child {
+	color: #d92b2b;
+	font-size: 35px;
+}
+
+.mobile-main {
+	height: calc(100vh - 120px);
+}
+
+.searchbar-mobile {
+	height: 44px;
+}
+
+.searchbar-mobile i {
+	color: #727272;
+}
+
+.searchbar-mobile input {
+	border: none;
+}
+
+.mailbox-mobile {
+	height: calc(100vh - 164px);
+	overflow-y: scroll;
+}
+
+.mail-mobile {
+	height: 79px;
+}
+
+.mail-mobile input {
+	cursor: pointer;
+}
+
+.mail-line-mobile {
+	overflow-x: scroll;
+}
+
+.mail-line-mobile {
+	font-size: 13px;
+	color: #6e6e6e;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.mail-line-mobile span:first-child {
+	font-size: 17px;
+	color: #060606;
+}
+
+.mail-end-mobile {
+	color: #777;
+	width: 50px;
+}
+
+.mail-end-mobile span {
+	font-size: 12px;
+}
+
+.mail-end-mobile img {
+	width: 30px;
+	cursor: pointer;
 }
